@@ -6,8 +6,6 @@ import argparse
 from pathlib import Path
 
 def main():
-    #test_tree=Generator('C://Users//MF0185//Downloads//ECC - Ting (7).csv', run=True)
-    # Add theme to window
     parser = argparse.ArgumentParser(description="Choose between GUI and command line")
     parser.add_argument("-v", "--pysimple", action="store_true", help="Use the GUI if you have PySimpleGUI")
     #parser.add_argument("-c", "--command", type=str, help="Specify the JSON file path for command line mode")
@@ -16,10 +14,9 @@ def main():
     parser.add_argument("-n", "--file", type=str, help="Path to the navigation JSON file")
     parser.add_argument("-t", "--tran", type=str, help="Path to the translation JSON file")
 
-    # Selection of generation type
+    # Selection of language
     parser.add_argument("-l", "--language", type=str, choices=['Spanish', 'Creole'],
-                        help="Specify the generation type: 'Spanish', or 'Creole'")
-
+                        help="Specify the language: 'Spanish', or 'Creole'")
 
     args = parser.parse_args()
 

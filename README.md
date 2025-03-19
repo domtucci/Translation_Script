@@ -45,4 +45,5 @@ Add developer key: Run the program with PySimpleGUI (**run w/ PySimpleGUI**) and
 # Visuals
 
 Image of the Spanish config.JSON file
+
 ![alt text](Visual_References/config.png)
